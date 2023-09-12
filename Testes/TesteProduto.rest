@@ -9,15 +9,17 @@ POST http://127.0.0.1:8000/Produto/ HTTP/1.1
 content-type: application/json
 
 {
-
-    "nome": "Leo",
-    "descricao": "sei la",
-    "valor_unitario": 3
+    "nome": "Lasdsfsdad",
+    "descricao": "sasfdsfdsas",
+    "valor_unitario": 2,
+    "foto": "fdsf"
+    
+    
 
 }
 
 ### Verbo PUT – atualiza
-PUT http://127.0.0.1:8000/Produto/2 HTTP/1.1
+PUT http://127.0.0.1:8000/Produto/1 HTTP/1.1
 content-type: application/json
 
 {
