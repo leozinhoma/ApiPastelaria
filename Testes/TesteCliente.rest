@@ -10,12 +10,12 @@ content-type: application/json
 
 {
 
-    "nome" : "Abc da Silva",
-    "cpf" : "01923874656",
-    "telefone" : "49988234567",
-    "senha" : "bolinhas",
-    "compra_fiado" : 12,
-    "dia_fiado" : 2
+    "nome" : "Leonardo Martendal",
+    "cpf" : "015643874656",
+    "telefone" : "4988234567",
+    "senha" : "bolinzhas",
+    "compra_fiado" : 15,
+    "dia_fiado" : 8
 
 }
 
@@ -24,7 +24,7 @@ PUT http://127.0.0.1:8000/cliente/1 HTTP/1.1
 content-type: application/json
 
 {
-    "nome" : "Bolinhas dos Testess",
+    "nome" : "Leonardo Barros",
     "cpf" : "12345678909",
     "telefone" : "49898989",
     "senha" : "abc",

@@ -47,7 +47,7 @@ def post_Produto(corpo: Produto):
 
         session.commit()
 
-        return {"id": dados.id_produto}, 200
+        return {"id": dados.id_produto, "nome": dados.nome}, 200
     
     except Exception as e:
         session.rollback()
@@ -72,7 +72,7 @@ def put_Produto(id: int, corpo: Produto):
         session.add(dados)
         session.commit()
 
-        return {"id": dados.id_produto}, 200
+        return {"id": dados.id_produto, "nome": dados.nome}, 200
     
     except Exception as e:
         session.rollback()
@@ -91,7 +91,7 @@ def delete_Produto(id: int):
         session.delete(dados)
         session.commit()
 
-        return {"id": dados.id_produto}, 200
+        return {"id": dados.id_produto, "nome": dados.nome}, 200
     
     except Exception as e:
         session.rollback()

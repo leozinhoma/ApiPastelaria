@@ -47,7 +47,7 @@ def post_funcionario(corpo: Funcionario):
 
         session.commit()
         
-        return {"id": dados.id_funcionario}, 200
+        return {"id": dados.id_funcionario, "nome": dados.nome}, 200
 
     except Exception as e:
         session.rollback()
@@ -74,7 +74,7 @@ def put_funcionario(id: int, corpo: Funcionario):
         session.add(dados)
         session.commit()
 
-        return {"id": dados.id_funcionario}, 200
+        return {"id": dados.id_funcionario, "nome": dados.nome}, 200
 
     except Exception as e:
         session.rollback()
@@ -92,7 +92,7 @@ def delete_funcionario(id: int):
         session.delete(dados)
         session.commit()
 
-        return {"id": dados.id_funcionario}, 200
+        return {"id": dados.id_funcionario, "nome": dados.nome}, 200
 
     except Exception as e:
         session.rollback()

@@ -48,7 +48,7 @@ def post_cliente(c: Cliente):
 
         session.commit()
 
-        return {"id": dados.id_cliente}, 200
+        return {"id": dados.id_cliente, "nome": dados.nome}, 200
     
     except Exception as e:
         session.rollback()
@@ -75,7 +75,7 @@ def put_cliente(id: int, c: Cliente):
         session.add(dados)
         session.commit()
 
-        return {"id": dados.id_cliente}, 200
+        return {"id": dados.id_cliente, "nome": dados.nome}, 200
     
     except Exception as e:
         session.rollback()
@@ -94,7 +94,7 @@ def delete_cliente(id: int):
         session.delete(dados)
         session.commit()
 
-        return {"id": dados.id_cliente}, 200
+        return {"id": dados.id_cliente, "nome": dados.nome}, 200
     
     except Exception as e:
         session.rollback()
