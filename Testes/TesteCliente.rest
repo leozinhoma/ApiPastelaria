@@ -1,27 +1,42 @@
 ### Verbo GET – listar todos
 GET http://localhost:8000/cliente/ HTTP/1.1
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
+
+### Verbo GET – listar todos
+curl -X 'GET' \
+    'http://localhost:8000/cliente/' \
+    -H 'accept: application/json' \
+    -H 'x-token: abcBolinhasToken' \
+    -H 'x-key: abcBolinhasKey'
 
 ### Verbo GET – listar um
 GET http://localhost:8000/cliente/1 HTTP/1.1
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
 
 ### Verbo POST – adicionar
 POST http://127.0.0.1:8000/cliente/ HTTP/1.1
 content-type: application/json
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
 
 {
 
-    "nome" : "Leonardo Martendal",
-    "cpf" : "015643874656",
-    "telefone" : "4988234567",
-    "senha" : "bolinzhas",
-    "compra_fiado" : 15,
-    "dia_fiado" : 8
+    "nome" : "Leonardo artendal",
+    "cpf" : "0asdasd15643874656",
+    "telefone" : "4988asd234567",
+    "senha" : "bolinadszhas",
+    "compra_fiado" : 45,
+    "dia_fiado" : 9
 
 }
 
 ### Verbo PUT – atualiza
 PUT http://127.0.0.1:8000/cliente/1 HTTP/1.1
 content-type: application/json
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
 
 {
     "nome" : "Leonardo Barros",
@@ -35,3 +50,5 @@ content-type: application/json
 
 ### Verbo DELETE - excluir
 DELETE http://127.0.0.1:8000/cliente/1 HTTP/1.1
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
